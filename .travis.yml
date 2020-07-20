@@ -5,6 +5,7 @@ before_script:
   - npm install @11ty/eleventy -g
 script: eleventy --pathprefix="/"
 deploy:
+  fqdn: yogic.me
   local-dir: _site
   provider: pages
   skip-cleanup: true
