@@ -2,62 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://yogic.me/eleventy-base-blog/posts/firstpost/</loc>
+    <loc>https://yogic.me/yogic.me/posts/firstpost/</loc>
     <lastmod>2018-05-01</lastmod>
   </url>
   
   <url>
-    <loc>https://yogic.me/eleventy-base-blog/posts/secondpost/</loc>
+    <loc>https://yogic.me/yogic.me/posts/secondpost/</loc>
     <lastmod>2018-07-04</lastmod>
   </url>
   
   <url>
-    <loc>https://yogic.me/eleventy-base-blog/posts/thirdpost/</loc>
+    <loc>https://yogic.me/yogic.me/posts/thirdpost/</loc>
     <lastmod>2018-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://yogic.me/eleventy-base-blog/posts/fourthpost/</loc>
+    <loc>https://yogic.me/yogic.me/posts/fourthpost/</loc>
     <lastmod>2018-09-30</lastmod>
   </url>
   
   <url>
-    <loc>https://yogic.me/eleventy-base-blog/about/</loc>
+    <loc>https://yogic.me/yogic.me/about/</loc>
     <lastmod>2020-07-20</lastmod>
   </url>
   
   <url>
-    <loc>https://yogic.me/eleventy-base-blog/posts/</loc>
+    <loc>https://yogic.me/yogic.me/posts/</loc>
     <lastmod>2020-07-20</lastmod>
   </url>
   
   <url>
-    <loc>https://yogic.me/eleventy-base-blog/</loc>
+    <loc>https://yogic.me/yogic.me/</loc>
     <lastmod>2020-07-20</lastmod>
   </url>
   
   <url>
-    <loc>https://yogic.me/eleventy-base-blog/page-list/</loc>
+    <loc>https://yogic.me/yogic.me/page-list/</loc>
     <lastmod>2020-07-20</lastmod>
   </url>
   
   <url>
-    <loc>https://yogic.me/eleventy-base-blog/tags/</loc>
+    <loc>https://yogic.me/yogic.me/tags/</loc>
     <lastmod>2020-07-20</lastmod>
   </url>
   
   <url>
-    <loc>https://yogic.me/eleventy-base-blog/tags/another-tag/</loc>
+    <loc>https://yogic.me/yogic.me/tags/another-tag/</loc>
     <lastmod>2020-07-20</lastmod>
   </url>
   
   <url>
-    <loc>https://yogic.me/eleventy-base-blog/tags/second-tag/</loc>
+    <loc>https://yogic.me/yogic.me/tags/second-tag/</loc>
     <lastmod>2020-07-20</lastmod>
   </url>
   
   <url>
-    <loc>https://yogic.me/eleventy-base-blog/tags/number-2/</loc>
+    <loc>https://yogic.me/yogic.me/tags/number-2/</loc>
     <lastmod>2020-07-20</lastmod>
   </url>
 </urlset>
