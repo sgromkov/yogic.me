@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<title>Yogic.me</title>
+	<title>Мария Воробьева</title>
 	<subtitle>I am writing about my experiences as a naval navel-gazer.</subtitle>
 	
 	<link href="https://yogic.me/feed/feed.xml" rel="self"/>
@@ -8,8 +8,8 @@
 	<updated>2018-09-30T00:00:00-00:00</updated>
 	<id>https://myurl.com/</id>
 	<author>
-		<name>Sergey Gromkov</name>
-		<email>sgromkov@gmail.com</email>
+		<name>Мария Воробьева</name>
+		<email>vorobieva.marya@yandex.ru</email>
 	</author>
 	
 	<entry>
