@@ -35,8 +35,8 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
 
-  eleventyConfig.addPassthroughCopy("img");
-  eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("images");
+  eleventyConfig.addPassthroughCopy("dist");
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({

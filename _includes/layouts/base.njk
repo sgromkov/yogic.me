@@ -1,41 +1,90 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ renderData.title or title or metadata.title }}</title>
-    <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
-    <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
-    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
-  </head>
-  <body>
-    <header>
-      <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
+<!DOCTYPE HTML>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<title>{{ renderData.title or title or metadata.title }}</title>
+        <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
+        <link rel="stylesheet" href="{{ '/dist/css/bundle.css' | url }}">
+        <link rel="stylesheet" href="{{ '/dist/css/fontawesome-all.min.css' | url }}">
+	</head>
+	<body class="is-preload">
+        <div id="wrapper">
+            <div id="main">
+                <div class="inner">
+                    <!-- Header -->
+                    <header id="header">
+                        <a href="{{ '/' | url }}" class="logo"><strong>{{ metadata.title }}</strong></a>
+                        <ul class="icons">
+                            {% for link in metadata.author.socials %}
+                                <li>
+                                    <a href="{{ link.url }}" class="icon brands fa-{{ link.icon }}">
+                                        <span class="label">{{ link.title }}</span>
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </header>
 
-      {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-      <ul class="nav">
-      {%- for entry in collections.all | eleventyNavigation %}
-        <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
-      {%- endfor %}
-      </ul>
-    </header>
+                    <!-- content -->
+                    {{ content | safe }}
+                </div>
+            </div>
 
-    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
-      <div class="warning">
-        <ol>
-          <li>Edit the <code>_data/metadata.json</code> with your blog’s information.</li>
-          <li>(Optional) Edit <code>.eleventy.js</code> with your <a href="https://www.11ty.dev/docs/config/">configuration preferences</a>.</li>
-          <li>Delete this message from <code>_includes/layouts/base.njk</code>.</li>
-        </ol>
-        <p><em>This is an <a href="https://www.11ty.dev/">Eleventy project</a> created from the <a href="https://github.com/11ty/eleventy-base-blog"><code>eleventy-base-blog</code> repo</a>.</em></p>
-      </div>
+            <!-- Sidebar -->
+            <div id="sidebar">
+                <div class="inner">
 
-      {{ content | safe }}
-    </main>
+                    <!-- Search -->
+                    {#
+                    <section id="search" class="alt">
+                        <form method="post" action="#">
+                            <input type="text" name="query" id="query" placeholder="Поиск" />
+                        </form>
+                    </section>
+                    #}
 
-    <footer></footer>
+                    <!-- Menu -->
+                    <nav id="menu">
+                        <header class="major">
+                            <h2>Меню</h2>
+                        </header>
+                        <ul>
+                            {%- for entry in collections.all | eleventyNavigation %}
+                                <li{% if entry.url == page.url %} class="is-active"{% endif %}>
+                                    <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+                                </li>
+                            {%- endfor -%}
+                        </ul>
+                    </nav>
 
-    <!-- Current page: {{ page.url | url }} -->
-  </body>
+                    <!-- Section -->
+                    <section>
+                        <header class="major">
+                            <h2>На связи</h2>
+                        </header>
+                        <p>По&nbsp;вопросам семинаров, курсов и&nbsp;индивидуальных занятий:</p>
+                        <ul class="contact">
+                            <li class="icon solid fa-envelope">
+                                <a href="mailto:{{ metadata.author.email }}">{{ metadata.author.email }}</a>
+                            </li>
+                            <li class="icon solid fa-phone">
+                                <a href="tel:{{ metadata.author.phone | replace(' ', '') }}">{{ metadata.author.phone }}</a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- Footer -->
+                    <footer id="footer">
+                        <p class="copyright">&copy; {{ metadata.author.name }}. 2020</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <script src="{{ '/dist/js/jquery.min.js' | url }}"></script>
+        <script src="{{ '/dist/js/browser.min.js' | url }}"></script>
+        <script src="{{ '/dist/js/breakpoints.min.js' | url }}"></script>
+        <script src="{{ '/dist/js/util.js' | url }}"></script>
+        <script src="{{ '/dist/js/main.js' | url }}"></script>
+	</body>
 </html>

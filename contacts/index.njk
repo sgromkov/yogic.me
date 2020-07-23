@@ -1,0 +1,33 @@
+---
+layout: layouts/home.njk
+title: Контакты
+eleventyNavigation:
+  key: Контакты
+  order: 3
+---
+
+<section>
+    <header class="main">
+        <h1>{{ title }}</h1>
+    </header>
+
+    <p>По&nbsp;вопросам семинаров, курсов и&nbsp;индивидуальных занятий:</p>
+
+    <h3>
+        <a href="mailto:{{ metadata.author.email }}">{{ metadata.author.email }}</a>
+    </h3>
+
+    <h3>
+        <a href="tel:{{ metadata.author.phone | replace(' ', '') }}">{{ metadata.author.phone }}</a>
+    </h3>
+
+    <ul class="icons">
+        {% for link in metadata.author.socials %}
+            <li>
+                <a href="{{ link.url }}" class="icon brands fa-{{ link.icon }}">
+                    <span class="label">{{ link.title }}</span>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</section>

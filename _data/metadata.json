@@ -1,5 +1,5 @@
 {
-  "title": "Yogic.me",
+  "title": "Мария Воробьева",
   "url": "https://yogic.me/",
   "description": "I am writing about my experiences as a naval navel-gazer.",
   "feed": {
@@ -9,7 +9,35 @@
     "id": "https://myurl.com/"
   },
   "author": {
-    "name": "Sergey Gromkov",
-    "email": "sgromkov@gmail.com"
+    "name": "Мария Воробьева",
+    "email": "vorobieva.marya@yandex.ru",
+    "phone": "+7 968 590 82 51",
+    "socials": [
+      {
+        "title": "Facebook",
+        "url": "https://www.facebook.com/vorobyeva108",
+        "icon": "facebook-f"
+      },
+      {
+        "title": "Вконтакте",
+        "url": "https://vk.com/id3325175",
+        "icon": "vk"
+      },
+      {
+        "title": "Instagram",
+        "url": "https://www.instagram.com/mariav108/",
+        "icon": "instagram"
+      },
+      {
+        "title": "Youtube",
+        "url": "https://www.youtube.com/channel/UCDO1zjq34CrgHe2wCNwwMmg",
+        "icon": "youtube"
+      },
+      {
+        "title": "Patreon",
+        "url": "https://www.patreon.com/hedgehoginnirvana",
+        "icon": "patreon"
+      }
+    ]
   }
 }
