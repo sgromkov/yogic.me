@@ -23,6 +23,11 @@
 
 		li {
 			padding-left: 0.5em;
+			padding-top: 0.5em;
+
+			&:first-child {
+				padding-top: 0;
+			}
 		}
 
 		&.alt {

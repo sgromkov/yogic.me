@@ -1,0 +1,13 @@
+{% if tableOfContents|length %}
+    <h2>Содержание выпуска</h2>
+    <table>
+        <tbody>
+            {% for item in tableOfContents %}
+                <tr>
+                    <td>{{ item.time | safe }}</td>
+                    <td>{{ item.title | safe }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endif %}

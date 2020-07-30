@@ -1,0 +1,19 @@
+{% if shownotes|length %}
+    <h2>Заметки к&nbsp;выпуску</h2>
+    <ul>
+        {% for note in shownotes %}
+            <li>
+                <h4>
+                    {% if note.url %}
+                        <a href="{{ note.url | url }}">{{ note.title | safe }}</a>
+                    {% else %}
+                        {{ note.title | safe }}
+                    {% endif %}
+                </h4>
+                {% if note.description %}
+                    <p>{{ note.description | safe }}</p>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}

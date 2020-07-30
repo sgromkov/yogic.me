@@ -39,5 +39,40 @@
         "icon": "patreon"
       }
     ]
+  },
+  "podcast": {
+    "name": "Ёжик в&nbsp;нирване",
+    "socials": [
+      {
+        "title": "Facebook",
+        "url": "https://www.facebook.com/groups/480187345805393/",
+        "icon": "facebook-f"
+      },
+      {
+        "title": "Вконтакте",
+        "url": "https://vk.com/hedgehoginnirvana",
+        "icon": "vk"
+      },
+      {
+        "title": "Instagram",
+        "url": "https://www.instagram.com/hedgehoginnirvana/",
+        "icon": "instagram"
+      },
+      {
+        "title": "Youtube",
+        "url": "https://www.youtube.com/channel/UCDO1zjq34CrgHe2wCNwwMmg",
+        "icon": "youtube"
+      },
+      {
+        "title": "Soundcloud",
+        "url": "https://soundcloud.com/hedgehoginnirvana",
+        "icon": "soundcloud"
+      },
+      {
+        "title": "Patreon",
+        "url": "https://www.patreon.com/hedgehoginnirvana",
+        "icon": "patreon"
+      }
+    ]
   }
 }

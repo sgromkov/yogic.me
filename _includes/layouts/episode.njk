@@ -1,0 +1,23 @@
+---
+layout: layouts/podcast.njk
+---
+
+<section>
+    <header class="main">
+        <h1>{{ title | safe }}</h1>
+        <p>{{ description |safe }}</p>
+    </header>
+
+    <br><p>{% include "soundcloud-iframe.njk" %}</p>
+
+    <div class="row">
+        <div class="col-6 col-12-small">
+            {% include "podcast-table-of-contents.njk" %}
+        </div>
+        <div class="col-6 col-12-small">
+            {% include "podcast-shownotes.njk" %}
+        </div>
+    </div>
+
+    {{ content | safe }}
+</section>

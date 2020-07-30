@@ -3,33 +3,15 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<title>{{ renderData.title or title or metadata.title }}</title>
-        <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
+		<title>{{ (renderData.title or title or metadata.title) | safe }}</title>
+        <meta name="Description" content="{{ (renderData.description or description or metadata.description) | safe }}">
         <link rel="stylesheet" href="{{ '/dist/css/bundle.css' | url }}">
         <link rel="stylesheet" href="{{ '/dist/css/fontawesome-all.min.css' | url }}">
 	</head>
 	<body class="is-preload">
         <div id="wrapper">
-            <div id="main">
-                <div class="inner">
-                    <!-- Header -->
-                    <header id="header">
-                        <a href="{{ '/' | url }}" class="logo"><strong>{{ metadata.title }}</strong></a>
-                        <ul class="icons">
-                            {% for link in metadata.author.socials %}
-                                <li>
-                                    <a href="{{ link.url }}" class="icon brands fa-{{ link.icon }}">
-                                        <span class="label">{{ link.title }}</span>
-                                    </a>
-                                </li>
-                            {% endfor %}
-                        </ul>
-                    </header>
 
-                    <!-- content -->
-                    {{ content | safe }}
-                </div>
-            </div>
+            {{ content | safe }}
 
             <!-- Sidebar -->
             <div id="sidebar">
@@ -52,7 +34,7 @@
                         <ul>
                             {%- for entry in collections.all | eleventyNavigation %}
                                 <li{% if entry.url == page.url %} class="is-active"{% endif %}>
-                                    <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+                                    <a href="{{ entry.url | url }}">{{ entry.title | safe }}</a>
                                 </li>
                             {%- endfor -%}
                         </ul>

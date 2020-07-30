@@ -1,0 +1,44 @@
+---
+layout: layouts/podcast.njk
+title: Подкаст &laquo;Ёжик в&nbsp;нирване&raquo;
+eleventyNavigation:
+  key: Подкаст &laquo;Ёжик в&nbsp;нирване&raquo;
+  order: 4
+---
+
+<section>
+    <header class="main">
+        <h1>{{ title | safe }}</h1>
+        <p>{{ description |safe }}</p>
+    </header>
+    <table>
+        <thead>
+            <th>#</th>
+            <th>Картинка</th>
+            <th>Эпизод</th>
+            <th>URL</th>
+        </thead>
+        <tbody>
+            {%- for episode in collections.episodes -%}
+                <tr>
+                    <td>{{ episode.data.number }}</td>
+                    <td>
+                        <span class="image" style="vertical-align: bottom">
+                            <image
+                                src="{{ episode.data.image | default('/images/podcast/logo-square.jpg') }}"
+                                alt="{{ episode.data.title }}"
+                                style="width: 50px"
+                            >
+                        </span>
+                    </td>
+                    <td>{{ episode.data.title }}</td>
+                    <td>
+                        <a href="{{ episode.url | url }}" style="border-bottom: none">
+                            <code>{{ episode.url | url }}</code>
+                        </a>
+                    </td>
+                </tr>
+            {%- endfor %}
+        </tbody>
+    </table>
+</section>
