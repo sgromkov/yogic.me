@@ -2,62 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://yogic.me/posts/firstpost/</loc>
+    <loc>https://yogic.me/podcast/1-zhenskaya-yoga/</loc>
     <lastmod>2018-05-01</lastmod>
   </url>
   
   <url>
-    <loc>https://yogic.me/posts/secondpost/</loc>
-    <lastmod>2018-07-04</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yogic.me/posts/thirdpost/</loc>
-    <lastmod>2018-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yogic.me/posts/fourthpost/</loc>
-    <lastmod>2018-09-30</lastmod>
+    <loc>https://yogic.me/podcast/2-chto-takoe-khatkha-yoga/</loc>
+    <lastmod>2018-12-01</lastmod>
   </url>
   
   <url>
     <loc>https://yogic.me/about/</loc>
-    <lastmod>2020-07-23</lastmod>
+    <lastmod>2020-07-30</lastmod>
   </url>
   
   <url>
     <loc>https://yogic.me/contacts/</loc>
-    <lastmod>2020-07-23</lastmod>
+    <lastmod>2020-07-30</lastmod>
   </url>
   
   <url>
     <loc>https://yogic.me/</loc>
-    <lastmod>2020-07-23</lastmod>
+    <lastmod>2020-07-30</lastmod>
   </url>
   
   <url>
-    <loc>https://yogic.me/page-list/</loc>
-    <lastmod>2020-07-23</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yogic.me/tags/</loc>
-    <lastmod>2020-07-23</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yogic.me/tags/another-tag/</loc>
-    <lastmod>2020-07-23</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yogic.me/tags/second-tag/</loc>
-    <lastmod>2020-07-23</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yogic.me/tags/number-2/</loc>
-    <lastmod>2020-07-23</lastmod>
+    <loc>https://yogic.me/podcast/</loc>
+    <lastmod>2020-07-30</lastmod>
   </url>
 </urlset>
