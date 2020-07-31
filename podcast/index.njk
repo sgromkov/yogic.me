@@ -11,34 +11,35 @@ eleventyNavigation:
         <h1>{{ title | safe }}</h1>
         <p>{{ description |safe }}</p>
     </header>
+
     <table>
         <thead>
             <th>#</th>
             <th>Картинка</th>
             <th>Эпизод</th>
-            <th>URL</th>
         </thead>
         <tbody>
-            {%- for episode in collections.episodes -%}
-                <tr>
-                    <td>{{ episode.data.number }}</td>
-                    <td>
-                        <span class="image" style="vertical-align: bottom">
-                            <image
-                                src="{{ episode.data.image | default('/images/podcast/logo-square.jpg') }}"
-                                alt="{{ episode.data.title }}"
-                                style="width: 50px"
-                            >
-                        </span>
-                    </td>
-                    <td>{{ episode.data.title }}</td>
-                    <td>
-                        <a href="{{ episode.url | url }}" style="border-bottom: none">
-                            <code>{{ episode.url | url }}</code>
-                        </a>
-                    </td>
-                </tr>
-            {%- endfor %}
+            {% for episode in collections.episodes %}
+                {% if episode.url %}
+                    <tr>
+                        <td style="vertical-align: top">{{ episode.data.number }}</td>
+                        <td style="vertical-align: top">
+                            <span class="image">
+                                <image
+                                    src="{{ episode.data.image | default('/images/podcast/logo-square.jpg') }}"
+                                    alt="{{ episode.data.title | safe }}"
+                                    style="width: 50px"
+                                >
+                            </span>
+                        </td>
+                        <td style="vertical-align: top">
+                            <a href="{{ episode.url | url }}">
+                                {{ episode.data.title | safe }}
+                            </a>
+                        </td>
+                    </tr>
+                {% endif %}
+            {% endfor %}
         </tbody>
     </table>
 </section>
