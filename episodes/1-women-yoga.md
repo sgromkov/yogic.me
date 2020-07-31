@@ -3,8 +3,8 @@
 	"number": 1,
 	"title": "Женская йога",
 	"description": "Первый выпуск посвящен животрепещущей теме женской йоге. Так&nbsp;ли она страшна.",
-	"soundcloudTrackId": "531253251",
 	"date": "2018-05-01",
+	"soundcloudTrackId": "531253251",
 	"image": "/images/episodes/1-zhenskaya-yoga.jpg",
 	"tableOfContents": [
 		{"time": "02:32", "title": "О&nbsp;ведических временах"},
