@@ -1,5 +1,7 @@
 ---
 layout: layouts/podcast.njk
+renderData:
+  title: "{{ title }} | Выпуск {{ number }} | Подкаст &laquo;Ёжик в&nbsp;нирване&raquo;"
 ---
 
 <section>
@@ -10,14 +12,11 @@ layout: layouts/podcast.njk
 
     <br><p>{% include "soundcloud-iframe.njk" %}</p>
 
-    <div class="row">
-        <div class="col-6 col-12-small">
-            {% include "podcast-table-of-contents.njk" %}
-        </div>
-        <div class="col-6 col-12-small">
-            {% include "podcast-shownotes.njk" %}
-        </div>
-    </div>
+    {% include "podcast-guests.njk" %}
+
+    {% include "podcast-table-of-contents.njk" %}
+
+    {% include "podcast-shownotes.njk" %}
 
     {{ content | safe }}
 </section>

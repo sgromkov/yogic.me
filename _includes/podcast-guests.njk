@@ -1,0 +1,21 @@
+{% if guests|length %}
+    <h2>{{ 'Гости' if guests|length > 1 else 'Гость' }} подкаста</h2>
+    <ul class="alt">
+        {% for guest in guests %}
+            <li>
+                <div class="row guest">
+                    <div class="col-4 col-12-small">
+                        <span class="image fit">
+                            <img class="guest__photo" src="{{ guest.photo }}" alt="Фотография {{ guest.name | safe }}">
+                        </span>
+                    </div>
+                    <div class="col-8 col-12-small">
+                        <h4>{{ guest.name | safe }}</h4>
+                        <p><em>{{ guest.position | safe }}</em></p>
+                        {{ guest.description | safe }}
+                    </div>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}
