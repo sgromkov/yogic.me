@@ -1,5 +1,8 @@
 {% if shownotes|length %}
     <h2>Заметки к&nbsp;выпуску</h2>
+    {% if shownotesDescription %}
+        {{ shownotesDescription | safe }}
+    {% endif %}
     <ul>
         {% for note in shownotes %}
             <li>
