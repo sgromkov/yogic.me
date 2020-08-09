@@ -6,7 +6,7 @@
 // Duration.
 	$duration: (
 		nav:				0.5s,
-		transition:			0.2s
+		transition:			0.15s
 	);
 
 // Size.
@@ -41,5 +41,6 @@
 		fg-secondary:		#7f888f,
 		border:				rgba(210,215,217,0.75),
 		border-bg:			transparentize(#e6ebed, 0.75),
-		accent:				#f56a6a
+		accent:				#f56a6a,
+		link:				#f41224
 	);
