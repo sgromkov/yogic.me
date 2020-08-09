@@ -31,13 +31,13 @@
 			'color #{_duration(transition)} ease-in-out',
 			'border-bottom-color #{_duration(transition)} ease-in-out'
 		));
-		border-bottom: solid 1px;
-		color: _palette(accent);
+		border-bottom: solid 1px fade-out($color: _palette(fg), $amount: 0.8);
+		color: _palette(fg);
 		text-decoration: none;
 
 		&:hover {
-			border-bottom-color: _palette(accent);
-			color: _palette(accent) !important;
+			border-bottom-color: fade-out($color: _palette(link), $amount: 0.8);
+			color: _palette(link) !important;
 
 			strong {
 				color: inherit;
