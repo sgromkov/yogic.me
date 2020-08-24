@@ -5,6 +5,7 @@
 	"description": "",
 	"date": "2019-07-03",
 	"soundcloudTrackId": "645598602",
+	"image": "/images/episodes/20-krishnamacharya-the-teacher-of-teachers.png",
 	"tableOfContents": [
 		{"time": "00:26", "title": "О чем и&nbsp;в&nbsp;каком формате будем говорить"},
 		{"time": "01:10", "title": "Почему Кришнамачарья"},
