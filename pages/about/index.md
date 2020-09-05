@@ -1,4 +1,5 @@
 ---
+permalink: "{{ page.fileSlug }}/index.html"
 layout: layouts/simple.njk
 title: Обо мне
 eleventyNavigation:
