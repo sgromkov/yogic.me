@@ -4,7 +4,7 @@
 @import 'libs/vendor';
 @import 'libs/breakpoints';
 @import 'libs/html-grid';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
 
 // Breakpoints
 @include breakpoints((
@@ -22,6 +22,11 @@
 @import 'base/reset';
 @import 'base/page';
 @import 'base/typography';
+
+// Blocks
+@import 'blocks/content-header';
+@import 'blocks/lead';
+@import 'blocks/soundcloud-iframe';
 
 // Components
 @import 'components/direct-link';

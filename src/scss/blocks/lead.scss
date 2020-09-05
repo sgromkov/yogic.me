@@ -1,0 +1,17 @@
+.lead {
+    margin: 0 0 (_size(element-margin) * 0.5) 0;
+    font-size: 1.8em;
+    font-weight: 300;
+
+    @include breakpoint('<=xlarge') {
+		font-size: 1.6em;
+	}
+
+	@include breakpoint('<=medium') {
+		font-size: 1.4em;
+	}
+
+	@include breakpoint('<=small') {
+			font-size: 1.3em;
+	}
+}

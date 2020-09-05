@@ -5,12 +5,14 @@ renderData:
 ---
 
 <section>
-    <header class="main">
+    <header class="content-header">
         <h1>{{ title | safe }}</h1>
-        <p>{{ description |safe }}</p>
+        {% if description|length %}
+          <p class="lead">{{ description |safe }}</p>
+        {% endif %}
     </header>
 
-    <br><p>{% include "soundcloud-iframe.njk" %}</p>
+    {% include "soundcloud-iframe.njk" %}
 
     {% include "podcast-guests.njk" %}
 

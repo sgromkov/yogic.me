@@ -6,13 +6,13 @@
     <ul>
         {% for note in shownotes %}
             <li>
-                <h4>
+                <p>
                     {% if note.url %}
                         <a href="{{ note.url | url }}">{{ note.title | safe }}</a>
                     {% else %}
                         {{ note.title | safe }}
                     {% endif %}
-                </h4>
+                </p>
                 {% if note.description %}
                     <p>{{ note.description | safe }}</p>
                 {% endif %}
