@@ -1,0 +1,21 @@
+---
+title: О&nbsp;вегетарианстве
+description: Разговариваем про вегетарианскую диету.
+eleventyNavigation:
+  parent: Подкаст &laquo;Ёжик в&nbsp;нирване&raquo;
+  key: О&nbsp;вегетарианстве
+  order: 4
+---
+
+{% from "macro/episodes.njk" import episodes %}
+
+<section>
+    <header class="content-header">
+        <h1>{{ title | safe }}</h1>
+        <p class="lead">{{ description | safe }}</p>
+    </header>
+
+    {{ episodes({
+        'episodes': collections.podcastVegetarian
+    }) }}
+</section>

@@ -1,0 +1,4 @@
+{
+    "layout": "layouts/podcast.njk",
+    "permalink": "/podcast/playlists/{{ page.fileSlug }}/index.html"
+}
