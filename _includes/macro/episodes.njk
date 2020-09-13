@@ -1,0 +1,25 @@
+{% macro episodes(props = {}) %}
+    {% set episodes = props.episodes | default([]) %}
+    {% set title = props.title | default(false) %}
+
+    {% from "macro/episode.njk" import episode %}
+
+    {% if episodes | length%}
+        <section class="episodes">
+            {% if title %}
+                <h2>{{ title }}</h2>
+            {% endif %}
+            <ul class="episodes__list block-list">
+                {% for episodeItem in episodes %}
+                    {% if episodeItem.url %}
+                        <li class="episodes__item">
+                            {{ episode({
+                                'episode': episodeItem
+                            }) }}
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </section>
+    {% endif %}
+{% endmacro %}
