@@ -1,0 +1,67 @@
+.episode-preview {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.episode-preview__picture {
+    margin-right: 20px;
+    width: 110px;
+    flex-shrink: 0;
+
+    @include breakpoint('<=xsmall') {
+        display: none;
+    }
+}
+
+.episode-preview__desc-picture {
+    margin: 0 0.75em 0.5em 0;
+    position: relative;
+    top: 0.25em;
+    float: left;
+    width: 50px;
+
+    @include breakpoint('>xsmall') {
+        display: none;
+    }
+}
+
+.episode-preview__credits {
+    margin-bottom: 7px;
+}
+
+.episode-preview__title {
+    margin: 0 0 0.5em 0;
+}
+
+.episode-preview__main {
+    flex-basis: 100%;
+}
+
+.episode-preview__additional {
+    flex-shrink: 0;
+    margin-left: 20px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: _palette(fg-secondary);
+    width: 100px;
+
+    &_type_date {
+        width: 150px;
+    }
+
+    @include breakpoint('<=medium') {
+        display: none;
+    }
+}
+
+.episode-preview__additional-text {
+    white-space: nowrap;
+}
+
+.episode-preview__credits-item_hidden_from-large {
+    @include breakpoint('>=large') {
+        display: none;
+    }
+}

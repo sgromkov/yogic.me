@@ -1,0 +1,33 @@
+.picture {
+
+}
+
+.picture__container {
+    overflow: hidden;
+    border-radius: _size(border-radius);
+}
+
+.picture__image {
+    display: block;
+}
+
+.picture_shape_square {
+    .picture__container {
+        position: relative;
+        flex-shrink: 0;
+        height: 0;
+        padding-top: 100%;
+    }
+
+    .picture__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        object-fit: cover;
+        font-family: 'object-fit: cover;';
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -5,6 +5,7 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const getDateInRu = require("./utilities/getDateInRU");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -14,7 +15,17 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setDataDeepMerge(true);
 
   eleventyConfig.addFilter("readableDate", dateObj => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
+    return getDateInRu(dateObj);
+  });
+
+  eleventyConfig.addFilter("readableEpisodeDuration", time => {
+    const timeElements = time.split(':');
+
+    if (timeElements.length === 2) {
+      return `${+timeElements[0]} мин`;
+    } else {
+      return `${+timeElements[0]} ч ${+timeElements[1]} мин`;
+    }
   });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
@@ -29,6 +40,22 @@ module.exports = function(eleventyConfig) {
     }
 
     return array.slice(0, n);
+  });
+
+  eleventyConfig.addCollection("podcastInterview", function(collectionApi) {
+    return collectionApi.getFilteredByTags("episodes", "interview");
+  });
+
+  eleventyConfig.addCollection("podcastTeacher", function(collectionApi) {
+    return collectionApi.getFilteredByTags("episodes", "teacher");
+  });
+
+  eleventyConfig.addCollection("podcastHistoryAndPhilosophy", function(collectionApi) {
+    return collectionApi.getFilteredByTags("episodes", "history and philosophy of yoga");
+  });
+
+  eleventyConfig.addCollection("podcastVegetarian", function(collectionApi) {
+    return collectionApi.getFilteredByTags("episodes", "vegetarian");
   });
 
   eleventyConfig.addPassthroughCopy("images");

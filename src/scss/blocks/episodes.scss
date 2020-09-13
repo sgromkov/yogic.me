@@ -1,0 +1,14 @@
+.episodes {
+    margin-top: 40px;
+}
+
+.episodes__item {
+    padding: 0;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid _palette(border);
+
+    &:first-child {
+        margin-top: 0px;
+    }
+}
