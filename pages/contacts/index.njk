@@ -12,15 +12,11 @@ eleventyNavigation:
         <h1>{{ title }}</h1>
     </header>
 
-    <p>По&nbsp;вопросам семинаров, курсов и&nbsp;индивидуальных занятий:</p>
-
-    <h3>
-        <a href="mailto:{{ metadata.author.email }}">{{ metadata.author.email }}</a>
-    </h3>
-
-    <h3>
-        <a href="tel:{{ metadata.author.phone | replace(' ', '') }}">{{ metadata.author.phone }}</a>
-    </h3>
+    <p>
+        По&nbsp;вопросам семинаров, курсов и&nbsp;индивидуальных занятий:
+        <br>
+        <a href="mailto:{{ metadata.author.email }}"><b>{{ metadata.author.email }}</b></a>
+    </p>
 
     <ul class="icons">
         {% for link in metadata.author.socials %}
