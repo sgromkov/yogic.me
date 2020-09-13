@@ -1,0 +1,7 @@
+{
+    "tags": [
+        "episodes"
+    ],
+    "layout": "layouts/episode.njk",
+    "permalink": "/podcast/episodes/{{ page.fileSlug }}/index.html"
+}
