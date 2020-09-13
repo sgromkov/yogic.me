@@ -1,16 +1,23 @@
 ---
-permalink: "{{ page.fileSlug }}/index.html"
+permalink: "podcast/{{ page.fileSlug }}/index.html"
 layout: layouts/podcast.njk
-title: Подкаст &laquo;Ёжик в&nbsp;нирване&raquo;
+title: Выпуски подкаста &laquo;Ёжик в&nbsp;нирване&raquo;
 description: Подкаст о&nbsp;различных аспектах йоги и&nbsp;всего связанного с&nbsp;ней. Обсуждение острых тем, интервью с&nbsp;интересными, знающими людьми, обзоры книг, курсов и&nbsp;многое другое.
 eleventyNavigation:
-  key: Подкаст &laquo;Ёжик в&nbsp;нирване&raquo;
-  order: 4
+  parent: Подкаст &laquo;Ёжик в&nbsp;нирване&raquo;
+  key: Все выпуски
+  order: 0
 ---
+
+{% from "macro/episodes.njk" import episodes %}
 
 <section>
     <header class="content-header">
         <h1>{{ title | safe }}</h1>
         <p class="lead">{{ description | safe }}</p>
     </header>
+
+    {{ episodes({
+        'episodes': collections.episodes | reverse
+    }) }}
 </section>
