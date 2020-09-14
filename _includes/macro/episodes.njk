@@ -4,10 +4,10 @@
 
     {% from "macro/episode.njk" import episode %}
 
-    {% if episodes | length%}
+    {% if episodes | length %}
         <section class="episodes">
             {% if title %}
-                <h2>{{ title }}</h2>
+                <h2 class="episodes__title">{{ title }}</h2>
             {% endif %}
             <ul class="episodes__list block-list">
                 {% for episodeItem in episodes %}
