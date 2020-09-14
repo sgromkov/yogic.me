@@ -47,4 +47,8 @@
 		right: (-0.625em / 1.25);
 		top: 0;
 	}
+
+	&_color_dark {
+		color: _palette(fg);
+	}
 }
