@@ -1,5 +1,10 @@
-.episodes {
+.episodes__list {
     margin-top: 40px;
+}
+
+
+.episodes__title + .episodes__list {
+    margin-top: 0;
 }
 
 .episodes__item {
