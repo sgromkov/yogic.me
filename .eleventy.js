@@ -6,6 +6,7 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const getDateInRu = require("./utilities/getDateInRU");
+const util = require('util');
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -40,6 +41,10 @@ module.exports = function(eleventyConfig) {
     }
 
     return array.slice(0, n);
+  });
+
+  eleventyConfig.addFilter('dump', obj => {
+    return `<pre>${util.inspect(obj)}</pre>`;
   });
 
   eleventyConfig.addCollection("podcastInterview", function(collectionApi) {
