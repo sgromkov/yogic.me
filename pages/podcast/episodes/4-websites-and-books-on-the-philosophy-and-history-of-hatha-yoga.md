@@ -58,6 +58,6 @@
 			"title": "Книга &laquo;Основы кашмирского шиваизма&raquo;, Виктория Дмитриева"
 		}
 	],
-	"tags": "history and philosophy of yoga"
+	"tags": "philosophy"
 }
 ---

@@ -19,6 +19,6 @@
 		{"time": "22:38", "title": "Ричард Докинз&nbsp;&mdash; биолог, учёный с&nbsp;мировым именем"},
 		{"time": "25:38", "title": "Давайте сохранять ясный&nbsp;ум, адекватность и&nbsp;критический подход"}
 	],
-	"tags": "history and philosophy of yoga"
+	"tags": "philosophy"
 }
 ---

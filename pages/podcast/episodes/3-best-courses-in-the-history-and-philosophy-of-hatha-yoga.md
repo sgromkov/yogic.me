@@ -35,7 +35,7 @@
 			"url": "https://www.youtube.com/watch?v=TCv6DHkXsTE&list=PL4hNDN0F9z1HdrEOUl-nJ6uGbF55ScOi4"
 		}
 	],
-	"tags": "history and philosophy of yoga"
+	"tags": "philosophy"
 }
 ---
 

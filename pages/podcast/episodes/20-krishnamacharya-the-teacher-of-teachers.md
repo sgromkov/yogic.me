@@ -46,6 +46,6 @@
 			"url": "https://soundcloud.com/hedgehoginnirvana/vypusk-2-chto-takoe-khatkha-ioga"
 		}
 	],
-	"tags": "history and philosophy of yoga"
+	"tags": "philosophy"
 }
 ---

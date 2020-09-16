@@ -55,8 +55,8 @@ module.exports = function(eleventyConfig) {
     return collectionApi.getFilteredByTags("episodes", "teacher");
   });
 
-  eleventyConfig.addCollection("podcastHistoryAndPhilosophy", function(collectionApi) {
-    return collectionApi.getFilteredByTags("episodes", "history and philosophy of yoga");
+  eleventyConfig.addCollection("podcastPhilosophy", function(collectionApi) {
+    return collectionApi.getFilteredByTags("episodes", "philosophy");
   });
 
   eleventyConfig.addCollection("podcastVegetarian", function(collectionApi) {

@@ -21,6 +21,6 @@
 		{"title": "Книга Марка Синглтона &laquo;Тело йоги, истоки современной постуральной практики&raquo;."},
 		{"title": "Книга Нормана Сьомана &laquo;Динамические практики в&nbsp;классической йоге&raquo;."}
 	],
-	"tags": "history and philosophy of yoga"
+	"tags": "philosophy"
 }
 ---

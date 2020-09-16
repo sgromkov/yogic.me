@@ -37,6 +37,6 @@
 			"url": "https://www.amazon.com/At-Days-Close-Night-Times/dp/0393329011"
 		}
 	],
-	"tags": "history and philosophy of yoga"
+	"tags": "philosophy"
 }
 ---

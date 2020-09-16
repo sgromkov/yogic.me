@@ -6,6 +6,6 @@
 	"date": "2019-03-12",
 	"duration": "24:47",
 	"soundcloudTrackId": "589068855",
-	"tags": "history and philosophy of yoga"
+	"tags": "philosophy"
 }
 ---
