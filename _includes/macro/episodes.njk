@@ -7,7 +7,9 @@
     {% if episodes | length %}
         <section class="episodes">
             {% if title %}
-                <h2 class="episodes__title">{{ title }}</h2>
+                <header class="major episodes__header">
+                    <h2>{{ title }}</h2>
+                </header>
             {% endif %}
             <ul class="episodes__list block-list">
                 {% for episodeItem in episodes %}

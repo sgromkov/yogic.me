@@ -1,0 +1,43 @@
+{% macro playlists(props = {}) %}
+    {% set playlists = props.playlists | default([]) %}
+    {% set title = props.title | default(false) %}
+
+    {% from "macro/playlist.njk" import playlist %}
+
+    {% if playlists | length %}
+        {# <section class="playlists">
+            {% if title %}
+                <header class="major playlists__header">
+                    <h2>{{ title }}</h2>
+                </header>
+            {% endif %}
+            <ul class="playlists__list block-list">
+                {% for playlistData in playlists %}
+                    {% if playlistData.url %}
+                        <li class="playlists__item">
+                            {{ playlist({
+                                'playlist': playlistData
+                            }) }}
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </section> #}
+        <section>
+            {% if title %}
+                <header class="major">
+                    <h2>{{ title }}</h2>
+                </header>
+            {% endif %}
+            <div class="posts">
+                {% for playlistData in playlists %}
+                    {% if playlistData.url %}
+                        {{ playlist({
+                            'playlist': playlistData
+                        }) }}
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </section>
+    {% endif %}
+{% endmacro %}

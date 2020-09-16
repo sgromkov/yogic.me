@@ -1,16 +1,59 @@
 ---
 permalink: "{{ page.fileSlug }}/index.html"
-layout: layouts/podcast.njk
+layout: layouts/base.njk
 title: Подкаст &laquo;Ёжик в&nbsp;нирване&raquo;
-description: Подкаст о&nbsp;различных аспектах йоги и&nbsp;всего связанного с&nbsp;ней. Обсуждение острых тем, интервью с&nbsp;интересными, знающими людьми, обзоры книг, курсов и&nbsp;многое другое.
+description: Мой личный подкаст о&nbsp;различных аспектах йоги и&nbsp;всего связанного с&nbsp;ней. Обсуждение острых тем, интервью с&nbsp;интересными, знающими людьми, обзоры книг, курсов и&nbsp;многое другое.
 eleventyNavigation:
   key: Подкаст &laquo;Ёжик в&nbsp;нирване&raquo;
   order: 4
 ---
 
-<section>
-    <header class="content-header">
-        <h1>{{ title | safe }}</h1>
-        <p class="lead">{{ description | safe }}</p>
-    </header>
-</section>
+{% from "macro/episodes.njk" import episodes %}
+{% from "macro/playlists.njk" import playlists %}
+
+<div id="main">
+    <div class="inner inner_style_podcast">
+        <header id="header" class="header">
+            <div class="header__nav">
+                <a href="{{ '/podcast/' | url }}" class="header__logo">
+                    <strong>{{ metadata.podcast.name | safe }}</strong>
+                </a>
+            </div>
+            <ul class="icons header__icons header__icons_color_dark">
+                {% for link in metadata.podcast.socials %}
+                    <li>
+                        <a href="{{ link.url }}" class="icon brands fa-{{ link.icon }}">
+                            <span class="label">{{ link.title }}</span>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </header>
+
+        <section id="banner">
+            <div class="content">
+                <header>
+                    <h1>{{ title | safe }}</h1>
+                    <p class="lead">{{ description | safe }}</p>
+                </header>
+                <ul class="actions">
+                    <li><a href="{{ '/podcast/episodes/' | url }}" class="button big">Все выпуски подкаста</a></li>
+                </ul>
+            </div>
+            <span class="image object">
+                <img src="/images/podcast/logo-square.jpg" alt="Человекоподобный ёж в позе лотоса держит яблоко" />
+            </span>
+        </section>
+    </div>
+    <div class="inner">
+        {{ episodes({
+            'episodes': [collections.episodes | reverse | first],
+            'title': 'Новый выпуск'
+        }) }}
+
+        {{ playlists({
+            'playlists': collections.playlists,
+            'title': 'Сборники выпусков'
+        }) }}
+    </div>
+</div>

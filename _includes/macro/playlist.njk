@@ -1,0 +1,75 @@
+{% macro playlist(props = {}) %}
+    {% set playlist = props.playlist | default({}) %}
+
+    {# <article class="playlist-preview">
+        <div class="playlist-preview__picture">
+            <div class="picture">
+                <div class="picture__container">
+                    <img
+                        class="picture__image"
+                        src="{{ playlist.data.image | default('/images/podcast/logo-square.jpg') }}"
+                        alt="Обложка выпуска номер {{ playlist.data.number }} - {{ playlist.data.title | safe }}"
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="playlist-preview__main">
+            <div class="playlist-preview__credits credits">
+                <ul class="credits__list block-list">
+                    <li class="credits__item">
+                        <span class="credits__text">Выпуск {{ playlist.data.number }}</span>
+                    </li>
+                    <li class="credits__item playlist-preview__credits-item_hidden_from-large">
+                        <time
+                            class="playlist-preview__additional-text"
+                            title="Продолжительность выпуска"
+                        >
+                            {{ playlist.data.duration | readableEpisodeDuration }}</span>
+                        </time>
+                    </li>
+                    <li class="credits__item playlist-preview__credits-item_hidden_from-large">
+                        <time
+                            datetime="{{ playlist.data.date }}"
+                            class="credits__text"
+                            title="Дата публикации"
+                        >
+                            {{ playlist.data.date | readableDate }}
+                        </time>
+                    </li>
+                </ul>
+            </div>
+            <h3 class="playlist-preview__title">
+                <a href="{{ playlist.url | url }}" class="playlist-preview__link">
+                    {{ playlist.data.title | safe }}
+                </a>
+            </h3>
+            {% if playlist.data.description|length %}
+                <div class="playlist-preview__description">
+                    <div class="playlist-preview__desc-picture">
+                        <div class="picture picture_shape_square">
+                            <div class="picture__container">
+                                <img
+                                    class="picture__image"
+                                    src="{{ playlist.data.image | default('/images/podcast/logo-square.jpg') }}"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    {{ playlist.data.description |safe }}
+                </div>
+            {% endif %}
+        </div>
+    </article> #}
+
+    <article>
+        <a href="{{ playlist.url | url }}" class="image">
+            <img src="{{ playlist.data.image }}" alt="">
+        </a>
+        <h3>{{ playlist.data.title | safe }}</h3>
+        <p>{{ playlist.data.description | safe }}</p>
+        <ul class="actions">
+            <li><a href="{{ playlist.url }}" class="button">Подробнее</a></li>
+        </ul>
+    </article>
+{% endmacro %}

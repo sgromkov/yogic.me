@@ -3,7 +3,7 @@
 }
 
 
-.episodes__title + .episodes__list {
+.episodes__header + .episodes__list {
     margin-top: 0;
 }
 
@@ -15,5 +15,9 @@
 
     &:first-child {
         margin-top: 0px;
+    }
+
+    &:last-child {
+        border-bottom: none;
     }
 }
