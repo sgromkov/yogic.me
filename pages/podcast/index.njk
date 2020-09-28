@@ -47,7 +47,7 @@ eleventyNavigation:
     </div>
     <div class="inner">
         {{ episodes({
-            'episodes': [collections.episodes | reverse | first],
+            'episodes': [(collections.episodes | reverse)[0]],
             'title': 'Новый выпуск'
         }) }}
 
