@@ -4,6 +4,8 @@
 
     {% from "macro/episode.njk" import episode %}
 
+    {{ episodes | dump | safe }}
+
     {% if episodes | length %}
         <section class="episodes">
             {% if title %}
@@ -13,6 +15,7 @@
             {% endif %}
             <ul class="episodes__list block-list">
                 {% for episodeItem in episodes %}
+                    {{ episodeItem | dump | safe }}
                     {% if episodeItem.url %}
                         <li class="episodes__item">
                             {{ episode({
