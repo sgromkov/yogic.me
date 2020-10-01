@@ -5,7 +5,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<title>{{ (renderData.title or title or metadata.title) | safe }}</title>
         <meta name="Description" content="{{ (renderData.description or description or metadata.description) | safe }}">
-        <link rel="stylesheet" href="{{ '/dist/css/bundle.css' | url }}">
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.webmanifest">
+        <link rel="stylesheet" href="{{ '/build/css/bundle.css' | url }}">
         <link rel="stylesheet" href="{{ '/dist/css/fontawesome-all.min.css' | url }}">
 	</head>
 	<body class="is-preload">

@@ -5,7 +5,7 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
-const getDateInRu = require("./utilities/getDateInRU");
+const getDateInRu = require("./src/scripts/utilities/getDateInRU");
 const util = require('util');
 
 module.exports = function(eleventyConfig) {
@@ -63,8 +63,11 @@ module.exports = function(eleventyConfig) {
     return collectionApi.getFilteredByTags("episodes", "vegetarian");
   });
 
-  eleventyConfig.addPassthroughCopy("images");
-  eleventyConfig.addPassthroughCopy("dist");
+  eleventyConfig.addPassthroughCopy("src/images");
+  eleventyConfig.addPassthroughCopy("src/build");
+  eleventyConfig.addPassthroughCopy("src/dist");
+  eleventyConfig.addPassthroughCopy("src/favicon.ico");
+  eleventyConfig.addPassthroughCopy("src/manifest.webmanifest");
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
@@ -119,9 +122,9 @@ module.exports = function(eleventyConfig) {
 
     // These are all optional, defaults are shown:
     dir: {
-      input: ".",
-      includes: "_includes",
-      data: "_data",
+      input: "src",
+      includes: "includes",
+      data: "data",
       output: "_site"
     }
   };
