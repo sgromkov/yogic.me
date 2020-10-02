@@ -18,32 +18,6 @@
 	});
 
 	/**
-	 * Stops animations/transitions until the page has ...
-	 */
-
-	// ... loaded.
-	$window.on('load', function() {
-		window.setTimeout(function() {
-			$body.removeClass('is-preload');
-		}, 100);
-	});
-
-	// ... stopped resizing.
-	var resizeTimeout;
-
-	$window.on('resize', function() {
-		// Mark as resizing.
-		$body.addClass('is-resizing');
-
-		// Unmark after delay.
-		clearTimeout(resizeTimeout);
-
-		resizeTimeout = setTimeout(function() {
-			$body.removeClass('is-resizing');
-		}, 100);
-	});
-
-	/**
 	 * Sidebar
 	 */
 	var $sidebar = $('#sidebar');

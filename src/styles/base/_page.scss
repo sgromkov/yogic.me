@@ -35,14 +35,4 @@
 
 	body {
 		background: _palette(bg);
-
-		// Stops initial animations until page loads or stops resizing.
-			&.is-preload,
-			&.is-resizing {
-				*, *:before, *:after {
-					@include vendor('animation', 'none !important');
-					@include vendor('transition', 'none !important');
-				}
-			}
-
 	}

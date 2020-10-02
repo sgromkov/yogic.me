@@ -189,10 +189,6 @@
 					margin-left: (-0.875em / 2);
 				}
 			}
-
-			body.is-preload & {
-				display: none;
-			}
 		}
 
 		@include breakpoint('<=small') {
