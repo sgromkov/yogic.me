@@ -17,52 +17,20 @@
 
             {{ content | safe }}
 
-            <!-- Sidebar -->
-            <div id="sidebar">
-                <div class="inner">
+            <div class="sidebar is-inactive">
+                <div class="sidebar__body">
+                    {% include "components/sidebar-menu.njk" %}
 
-                    <!-- Menu -->
-                    <nav id="menu">
-                        <header class="major">
-                            <h2>Меню</h2>
-                        </header>
-                        <ul>
-                            {%- for entry in collections.all | eleventyNavigation %}
-                                <li{% if entry.url == page.url %} class="is-active"{% endif %}>
-                                    <a href="{{ entry.url | url }}">{{ entry.title | safe }}</a>
-                                    {%- if entry.children.length -%}
-                                        <ul>
-                                            {%- for child in entry.children %}
-                                                <li{% if child.url == page.url %} class="is-active"{% endif %}>
-                                                    <a href="{{ child.url | url }}">{{ child.title | safe }}</a>
-                                                </li>
-                                            {% endfor -%}
-                                        </ul>
-                                    {%- endif -%}
-                                </li>
-                            {%- endfor -%}
-                        </ul>
-                    </nav>
+                    {% include "components/sidebar-contacts.njk" %}
 
-                    <!-- Section -->
-                    <section>
-                        <header class="major">
-                            <h2>На связи</h2>
-                        </header>
-                        <p>По&nbsp;вопросам семинаров, курсов и&nbsp;индивидуальных занятий:</p>
-                        <ul class="contact">
-                            <li class="icon solid fa-envelope">
-                                <a href="mailto:{{ metadata.author.email }}">{{ metadata.author.email }}</a>
-                            </li>
-                        </ul>
-                    </section>
-
-                    <!-- Footer -->
-                    <footer id="footer">
-                        <p class="copyright">&copy; {{ metadata.author.name }}. 2020</p>
-                    </footer>
+                    {% include "components/sidebar-footer.njk" %}
                 </div>
             </div>
+
+            <button
+                class="reset-button sidebar-button"
+                onclick="document.querySelector('.sidebar').classList.toggle('is-inactive');"
+            ></button>
         </div>
 	</body>
 </html>

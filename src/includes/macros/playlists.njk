@@ -2,7 +2,7 @@
     {% set playlists = props.playlists | default([]) %}
     {% set title = props.title | default(false) %}
 
-    {% from "macro/playlist.njk" import playlist %}
+    {% from "macros/playlist.njk" import playlist %}
 
     {% if playlists | length %}
         {# <section class="playlists">
@@ -11,7 +11,7 @@
                     <h2>{{ title }}</h2>
                 </header>
             {% endif %}
-            <ul class="playlists__list block-list">
+            <ul class="playlists__list reset-list">
                 {% for playlistData in playlists %}
                     {% if playlistData.url %}
                         <li class="playlists__item">

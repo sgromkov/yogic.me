@@ -12,13 +12,13 @@ renderData:
         {% endif %}
     </header>
 
-    {% include "soundcloud-iframe.njk" %}
+    {% include "components/soundcloud-iframe.njk" %}
 
-    {% include "podcast-guests.njk" %}
+    {% include "components/podcast-guests.njk" %}
 
-    {% include "podcast-table-of-contents.njk" %}
+    {% include "components/podcast-table-of-contents.njk" %}
 
-    {% include "podcast-shownotes.njk" %}
+    {% include "components/podcast-shownotes.njk" %}
 
     {{ content | safe }}
 </section>

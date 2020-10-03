@@ -2,7 +2,7 @@
     {% set episodes = props.episodes | default([]) %}
     {% set title = props.title | default(false) %}
 
-    {% from "macro/episode.njk" import episode %}
+    {% from "macros/episode.njk" import episode %}
 
     {% if episodes | length %}
         <section class="episodes">
@@ -11,7 +11,7 @@
                     <h2>{{ title }}</h2>
                 </header>
             {% endif %}
-            <ul class="episodes__list block-list">
+            <ul class="episodes__list reset-list">
                 {% for episodeItem in episodes %}
                     {% if episodeItem.url %}
                         <li class="episodes__item">

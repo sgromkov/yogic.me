@@ -1,0 +1,87 @@
+.sidebar-button {
+    position: fixed;
+    top: 0;
+    left: _size(sidebar-width);
+    z-index: _misc(z-index-base);
+    display: block;
+    overflow: hidden;
+    width: 6em;
+    height: 7.5em;
+    outline: 0;
+    border: 0;
+    text-align: center;
+    text-indent: -15em;
+    white-space: nowrap;
+    line-height: 7.5em;
+    box-shadow: none;
+    @include icon(false, solid);
+    @include vendor('transition', 'left 0.2s ease');
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+
+    &:hover {
+        background-color: transparent;
+
+        &:before {
+            color: _palette(link);
+        }
+    }
+
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: inherit;
+        height: inherit;
+        content: '\f0c9';
+        text-indent: 0;
+        font-size: 2rem;
+        line-height: inherit;
+        @include vendor('transition', 'color 0.2s ease');
+    }
+
+    @include breakpoint('xlarge') {
+        display: none;
+    }
+
+    @include breakpoint('<=large') {
+        left: _size(sidebar-width-alt);
+
+        width: 6em;
+        height: 6.25em;
+        text-indent: 6em;
+        line-height: 6.25em;
+
+        &:before {
+            margin-left: (-0.875em / 2);
+            font-size: 1.5rem;
+        }
+    }
+
+    @include breakpoint('<=small') {
+        width: 7.25em;
+        text-indent: 7.25em;
+
+        &:before {
+            z-index: 1;
+            margin-top: (-0.5em / 2);
+            margin-left: (-0.125em / 2);
+            color: _palette(fg-secondary);
+            font-size: 1.1rem;
+        }
+
+        &:after {
+            position: absolute;
+            top: 1em;
+            left: 1em;
+            width: 5em;
+            height: 3.5em;
+            border-radius: _size(border-radius);
+            background: transparentize(lighten(_palette(fg-secondary), 35), 0.25);
+            content: '';
+        }
+    }
+}
+
+.sidebar.is-inactive + .sidebar-button {
+    left: 0;
+}

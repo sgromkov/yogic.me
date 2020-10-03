@@ -1,0 +1,7 @@
+.reset-button {
+    @include reset-button;
+}
+
+.is-using-mouse .reset-button {
+    outline: none;
+}

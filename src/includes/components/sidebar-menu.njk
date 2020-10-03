@@ -1,0 +1,21 @@
+<nav class="menu">
+    <header class="major">
+        <h2>Меню</h2>
+    </header>
+    <ul class="menu__list">
+        {%- for entry in collections.all | eleventyNavigation %}
+            <li class="menu__item {% if entry.url == page.url %}is-active{% endif %}">
+                <a class="menu__link" href="{{ entry.url | url }}">{{ entry.title | safe }}</a>
+                {%- if entry.children.length -%}
+                    <ul class="menu__list">
+                        {%- for child in entry.children %}
+                            <li class="menu__item {% if entry.url == page.url %}is-active{% endif %}">
+                                <a class="menu__link" href="{{ child.url | url }}">{{ child.title | safe }}</a>
+                            </li>
+                        {% endfor -%}
+                    </ul>
+                {%- endif -%}
+            </li>
+        {%- endfor -%}
+    </ul>
+</nav>

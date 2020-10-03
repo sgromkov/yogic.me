@@ -1,0 +1,86 @@
+.sidebar {
+	@include vendor('flex-grow', '0');
+	@include vendor('flex-shrink', '0');
+	@include vendor('transition', (
+		'margin-left 0.2s ease',
+		'box-shadow 0.2s ease'
+    ));
+
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: _misc(z-index-base);
+    overflow-x: hidden;
+    overflow-y: auto;
+
+	background-color: _palette(bg-alt);
+    width: _size(sidebar-width);
+
+    @include breakpoint('<=xlarge') {
+		width: _size(sidebar-width-alt);
+    }
+
+    @include breakpoint('<=large') {
+		box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.175);
+    }
+
+    &.is-inactive {
+        @include breakpoint('<=large') {
+            margin-left: (_size(sidebar-width-alt) * -1);
+            box-shadow: none;
+        }
+	}
+}
+
+.sidebar__body {
+    $pad: 2em / 0.9;
+
+    @include padding($pad, $pad, (0, 0, $pad, 0));
+    position: relative;
+    width: _size(sidebar-width);
+
+    @include breakpoint('<=xlarge') {
+        $pad: 1.5em / 0.9;
+
+		@include padding($pad, $pad, (0, 0, $pad, 0));
+		width: _size(sidebar-width-alt);
+    }
+
+    @include breakpoint('<=large') {
+        -webkit-overflow-scrolling: touch;
+        height: 100%;
+        left: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        position: absolute;
+        top: 0;
+
+        &:after {
+            content: '';
+            display: block;
+            height: 4em;
+            width: 100%;
+        }
+    }
+}
+
+.sidebar h2 {
+    font-size: (1.25em / 0.9);
+}
+
+.sidebar__body > * {
+    border-bottom: solid 2px _palette(border);
+    margin: 0 0 (_size(element-margin) * 1.75) 0;
+    padding: 0 0 (_size(element-margin) * 1.75) 0;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+
+    &:last-child {
+        border-bottom: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
