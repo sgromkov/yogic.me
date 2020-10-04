@@ -68,6 +68,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/dist");
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
   eleventyConfig.addPassthroughCopy("src/manifest.webmanifest");
+  eleventyConfig.addPassthroughCopy("src/robots.txt");
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
