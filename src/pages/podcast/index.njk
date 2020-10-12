@@ -10,6 +10,7 @@ eleventyNavigation:
 
 {% from "macros/episodes.njk" import episodes %}
 {% from "macros/playlists.njk" import playlists %}
+{% from "macros/stage.njk" import stage %}
 
 <div id="main">
     <div class="inner inner_style_podcast">
@@ -30,20 +31,18 @@ eleventyNavigation:
             </ul>
         </header>
 
-        <section id="banner">
-            <div class="content">
-                <header>
-                    <h1>{{ title | safe }}</h1>
-                    <p class="lead">{{ description | safe }}</p>
-                </header>
-                <ul class="actions">
-                    <li><a href="{{ '/podcast/episodes/' | url }}" class="button big">Все выпуски подкаста</a></li>
-                </ul>
-            </div>
-            <span class="image object">
-                <img src="/images/podcast/logo-square.jpg" alt="Человекоподобный ёж в позе лотоса держит яблоко" />
-            </span>
-        </section>
+        {{ stage({
+            'title': title,
+            'subtitle': description,
+            'actions': [
+                {
+                    'url':  '/podcast/episodes/',
+                    'title': 'Все выпуски подкаста'
+                }
+            ],
+            'image': '/images/podcast/logo-square.jpg',
+            'imageAlt': 'Человекоподобный ёж в позе лотоса держит яблоко'
+        }) }}
     </div>
     <div class="inner">
         {{ episodes({

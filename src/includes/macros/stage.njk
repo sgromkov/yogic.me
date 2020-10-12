@@ -1,0 +1,38 @@
+{% macro stage(props = {}) %}
+    {% set title = props.title %}
+    {% set subtitle = props.subtitle | default("") %}
+    {% set text = props.text | default("") %}
+    {% set actions = props.actions | default([]) %}
+    {% set image = props.image | default("") %}
+    {% set imageAlt = props.imageAlt | default("") %}
+
+    <section class="stage">
+        <div class="stage__content">
+            <header class="stage__header">
+                <h1 class="stage__title">{{ title | safe }}</h1>
+                {% if subtitle %}
+                    <p class="lead stage__subtitle">{{ subtitle | safe }}</p>
+                {% endif %}
+            </header>
+            {% if text %}
+            <div class="stage__text">
+                {{ text | safe }}
+            </div>
+            {% endif %}
+            {% if actions | length %}
+                <ul class="actions stage__actions reset-list">
+                    {% for action in actions %}
+                        <li class="actions__item">
+                            <a href="{{ action.url | url }}" class="button big">{{ action.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+        {% if image %}
+        <span class="image object stage__graphics">
+            <img class="stage__image" src="{{ image }}" alt="{{ imageAlt }}" />
+        </span>
+        {% endif %}
+    </section>
+{% endmacro %}

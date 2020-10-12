@@ -32,6 +32,7 @@
 @import 'base/typography';
 
 // Blocks
+@import 'blocks/actions';
 @import 'blocks/content-header';
 @import 'blocks/credits';
 @import 'blocks/episode-preview';
@@ -42,6 +43,7 @@
 @import 'blocks/sidebar-button';
 @import 'blocks/sidebar';
 @import 'blocks/soundcloud-iframe';
+@import 'blocks/stage';
 
 // Components
 @import 'components/direct-link';
@@ -53,7 +55,6 @@
 @import 'components/icon';
 @import 'components/image';
 @import 'components/list';
-@import 'components/actions';
 @import 'components/icons';
 @import 'components/contact';
 @import 'components/pagination';
@@ -67,5 +68,4 @@
 @import 'layout/wrapper';
 @import 'layout/main';
 @import 'layout/header';
-@import 'layout/banner';
 @import 'layout/footer';

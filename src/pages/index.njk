@@ -6,19 +6,18 @@ eleventyNavigation:
     order: 1
 ---
 
-<!-- Banner -->
-<section id="banner">
-    <div class="content">
-        <header>
-            <h1>Привет, я&nbsp;Мария Воробьева</h1>
-            <p class="lead">Преподаватель хатха йоги, йогатерапевт, религиовед, специалист по&nbsp;адаптивной физической культуре.</p>
-        </header>
-        <p>Веду <a href="http://pranayoga.ru/master/vorobeva" rel="nofollow">групповые занятия</a>, офлайн и&nbsp;онлайн курсы по&nbsp;йоге и&nbsp;йогатерапии. Увлекаюсь историей и&nbsp;философией йоги, делюсь своими знаниями <a href="/podcast/">в&nbsp;подкасте &laquo;Ёжик в&nbsp;нирване&raquo;</a>.</p>
-        <ul class="actions">
-            <li><a href="{{ '/about/' | url }}" class="button big">Подробнее обо мне</a></li>
-        </ul>
-    </div>
-    <span class="image object">
-        <img src="images/photo-masha.jpg" alt="Фотография Марии Воробьевой" />
-    </span>
-</section>
+{% from "macros/stage.njk" import stage %}
+
+{{ stage({
+    'title': 'Привет, я&nbsp;Мария Воробьева',
+    'subtitle': 'Преподаватель хатха йоги, йогатерапевт, религиовед, специалист по&nbsp;адаптивной физической культуре.',
+    'text': '<p>Веду <a href="http://pranayoga.ru/master/vorobeva" rel="nofollow">групповые занятия</a>, офлайн и&nbsp;онлайн курсы по&nbsp;йоге и&nbsp;йогатерапии. Увлекаюсь историей и&nbsp;философией йоги, делюсь своими знаниями <a href="/podcast/">в&nbsp;подкасте &laquo;Ёжик в&nbsp;нирване&raquo;</a>.</p>',
+    'actions': [
+        {
+            'url':  '/about/',
+            'title': 'Подробнее обо мне'
+        }
+    ],
+    'image': 'images/photo-masha.jpg',
+    'imageAlt': 'Фотография Марии Воробьевой'
+}) }}

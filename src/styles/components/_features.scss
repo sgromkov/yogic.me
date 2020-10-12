@@ -9,14 +9,14 @@
 	.features {
 		$gutter: _size(gutter);
 
-		@include vendor('display', 'flex');
+		display: flex;
 		@include vendor('flex-wrap', 'wrap');
 		margin: 0 0 _size(element-margin) ($gutter * -1);
 		width: calc(100% + #{$gutter});
 
 		article {
 			@include vendor('align-items', 'center');
-			@include vendor('display', 'flex');
+			display: flex;
 			margin: 0 0 $gutter $gutter;
 			position: relative;
 			width: calc(50% - #{$gutter});

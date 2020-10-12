@@ -9,7 +9,7 @@
 	.posts {
 		$gutter: (_size(gutter) * 2);
 
-		@include vendor('display', 'flex');
+		display: flex;
 		@include vendor('flex-wrap', 'wrap');
 		margin: 0 0 _size(element-margin) ($gutter * -1);
 		width: calc(100% + #{$gutter});

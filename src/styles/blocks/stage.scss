@@ -1,0 +1,53 @@
+.stage {
+    @include padding(6em, 0);
+    display: flex;
+
+    @include orientation(portrait) {
+        @include vendor('flex-direction', 'column-reverse');
+    }
+}
+
+.stage__title {
+    margin-top: -0.125em;
+}
+
+.stage__content {
+    @include vendor('flex-grow', '1');
+    @include vendor('flex-shrink', '1');
+    width: 50%;
+
+    @include orientation(portrait) {
+        @include vendor('flex-grow', '0');
+        @include vendor('flex-shrink', '0');
+        width: 100%;
+    }
+}
+
+.stage__graphics {
+    @include vendor('flex-grow', '0');
+    @include vendor('flex-shrink', '0');
+    display: block;
+    margin: 0 0 _size(element-margin) (_size(element-margin) * 2);
+    width: 50%;
+
+    @include orientation(portrait) {
+        @include vendor('flex-grow', '0');
+        @include vendor('flex-shrink', '0');
+        margin: 0 0 (_size(element-margin) * 2) 0;
+        height: 25em;
+        max-height: 50vh;
+        min-height: 18em;
+        width: 100%;
+
+        @include breakpoint('<=xsmall') {
+            max-height: 35vh;
+        }
+    }
+}
+
+.stage__image {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
