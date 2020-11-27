@@ -1,10 +1,8 @@
----json
-{
-	"number": 18,
-	"title": "Йога, зож и&nbsp;бодипозитив",
-	"description": "В&nbsp;этом выпуске продолжаем отвечать на&nbsp;вопросы и&nbsp;говорим о&nbsp;бодипозитиве, его вреде и&nbsp;пользе.",
-	"date": "2019-06-05",
-	"duration": "16:00",
-	"soundcloudTrackId": "632093199"
-}
+---
+number: 18
+title: Йога, зож и&nbsp;бодипозитив
+description: В&nbsp;этом выпуске продолжаем отвечать на&nbsp;вопросы и&nbsp;говорим о&nbsp;бодипозитиве, его вреде и&nbsp;пользе.
+date: '2019-06-05'
+duration: '16:00'
+soundcloudTrackId: 632093199
 ---
