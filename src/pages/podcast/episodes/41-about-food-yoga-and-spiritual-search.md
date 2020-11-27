@@ -6,7 +6,7 @@
 	"date": "2020-09-12",
 	"duration": "1:07:45",
 	"soundcloudTrackId": "891992575",
-	"image": "/images/episodes/41-about-food-yoga-and-spiritual-search.png",
+	"image": "/images/episodes/41-about-food-yoga-and-spiritual-search.jpg",
 	"tableOfContents": [
 		{"time": "02:10", "title": "Как Дима &laquo;пришел в&nbsp;йогу&raquo;"},
 		{"time": "05:59", "title": "Про В. Бойко, А.&nbsp;Сидеркого и&nbsp;А.&nbsp;Лаппу"},

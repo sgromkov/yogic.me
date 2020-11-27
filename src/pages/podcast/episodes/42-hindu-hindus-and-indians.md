@@ -6,7 +6,7 @@
 	"date": "2020-09-29",
 	"duration": "17:33",
 	"soundcloudTrackId": "901564387",
-	"image": "/images/episodes/42-hindu-hindus-and-indians.png",
+	"image": "/images/episodes/42-hindu-hindus-and-indians.jpg",
 	"tableOfContents": [
 		{"time": "01:12", "title": "&laquo;Хинду&raquo;"},
 		{"time": "02:43", "title": "&laquo;Индия&raquo;"},

@@ -6,7 +6,7 @@
 	"date": "2020-01-21",
 	"duration": "17:42",
 	"soundcloudTrackId": "746932558",
-	"image": "/images/episodes/32-good-indian-movies.png",
+	"image": "/images/episodes/32-good-indian-movies.jpg",
 	"shownotes": [
 		{"title": "&laquo;Самсара&raquo;, 2001, Пан Налин"},
 		{"title": "&laquo;Кубок&raquo;, 1999, Кхьенце Норбу"},

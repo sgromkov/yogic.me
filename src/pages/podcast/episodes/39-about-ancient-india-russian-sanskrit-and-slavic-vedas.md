@@ -6,7 +6,7 @@
 	"date": "2020-05-16",
 	"duration": "25:51",
 	"soundcloudTrackId": "821635423",
-	"image": "/images/episodes/39-about-ancient-india-russian-sanskrit-and-slavic-vedas.png",
+	"image": "/images/episodes/39-about-ancient-india-russian-sanskrit-and-slavic-vedas.jpg",
 	"tableOfContents": [
 		{"time": "01:17", "title": "О&nbsp;седой индийской древности и&nbsp;Золотом веке"},
 		{"time": "02:26", "title": "Насколько Индия древняя цивилизация"},

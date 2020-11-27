@@ -6,7 +6,7 @@
 	"date": "2020-04-12",
 	"duration": "22:36",
 	"soundcloudTrackId": "796333642",
-	"image": "/images/episodes/37-fiction-about-india.png",
+	"image": "/images/episodes/37-fiction-about-india.jpg",
 	"tableOfContents": [
 		{"time": "01:50", "title": "Джумпа Лахири &laquo;Тезка&raquo;"},
 		{"time": "08:30", "title": "Немного о&nbsp;Салмане Рушди"},

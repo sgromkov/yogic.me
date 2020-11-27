@@ -5,7 +5,7 @@
 	"date": "2020-01-01",
 	"duration": "19:04",
 	"soundcloudTrackId": "736796215",
-	"image": "/images/episodes/31-the-newest-and-best-new-books.png",
+	"image": "/images/episodes/31-the-newest-and-best-new-books.jpg",
 	"tableOfContents": [
 		{"time": "00:29", "title": "Книги Лилиан Сильбюрн &laquo;Кундалини. Энергия глубин.&raquo;"},
 		{"time": "01:15", "title": "Кто&nbsp;же такой хороший исследователь?"},

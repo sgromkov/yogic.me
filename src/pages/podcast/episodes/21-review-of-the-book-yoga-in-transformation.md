@@ -5,7 +5,7 @@
 	"description": "Поговорим об&nbsp;очень хорошей книге, вышедшей в&nbsp;2018&nbsp;году. В&nbsp;ней полно интересного&nbsp;&mdash; статьи об&nbsp;истории и&nbsp;философии йоги, происхождении асан, практике йоги в&nbsp;различных религиозных школах Индии. Очень советую послушать, а&nbsp;затем, почитать книгу.",
 	"date": "2019-07-17",
 	"duration": "21:24",
-	"image": "/images/episodes/21-review-of-the-book-yoga-in-transformation.png",
+	"image": "/images/episodes/21-review-of-the-book-yoga-in-transformation.jpg",
 	"soundcloudTrackId": "652442945",
 	"tableOfContents": [
 		{"time": "01:53", "title": "Какую книгу будем обсуждать сегодня"},

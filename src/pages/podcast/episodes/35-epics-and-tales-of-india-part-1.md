@@ -6,7 +6,7 @@
 	"date": "2020-03-05",
 	"duration": "20:31",
 	"soundcloudTrackId": "771116068",
-	"image": "/images/episodes/35-epics-and-tales-of-india-part-1.png",
+	"image": "/images/episodes/35-epics-and-tales-of-india-part-1.jpg",
 	"tableOfContents": [
 		{"time": "01:10", "title": "Что такое Упанишады"},
 		{"time": "03:01", "title": "Сколько всего существует Упанишад"},

@@ -6,7 +6,7 @@
 	"date": "2019-07-30",
 	"duration": "1:04:00",
 	"soundcloudTrackId": "658567715",
-	"image": "/images/episodes/22-mikhail-galaev.png",
+	"image": "/images/episodes/22-mikhail-galaev.jpg",
 	"tableOfContents": [
 		{"time": "00:40", "title": "Краткая йогическая биография"},
 		{"time": "05:40", "title": "Почему йога стала профессией"},
@@ -28,7 +28,7 @@
 	"guests": [
 		{
 			"name": "Михаил Галаев",
-			"photo": "/images/guests/mikhail-galaev.png",
+			"photo": "/images/guests/mikhail-galaev.jpg",
 			"position": "Преподаватель йоги, основатель центров йоги Прана",
 			"description": "Ведущий преподаватель Курса подготовки преподавателей хатха-йоги в&nbsp;центре йоги &laquo;Прана&raquo;. Автор и&nbsp;ведущий программ этого курса: &laquo;Отстройки и&nbsp;правки асан&raquo;, &laquo;Психология преподавания&raquo;, &laquo;Владение голосом и&nbsp;речью преподавателя йоги&raquo;."
 		}

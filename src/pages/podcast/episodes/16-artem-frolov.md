@@ -5,7 +5,7 @@
 	"description": "Пообщались с&nbsp;Артемом Фроловым, врачом, одним из&nbsp;самых знающих и&nbsp;известных йогатерапевтов нашей страны о&nbsp;его пути в&nbsp;йогу, настоящей практике и&nbsp;о&nbsp;том вкладе, который может внести йога в&nbsp;медицину.",
 	"date": "2019-05-15",
 	"duration": "1:02:17",
-	"image": "/images/episodes/16-artem-frolov.png",
+	"image": "/images/episodes/16-artem-frolov.jpg",
 	"soundcloudTrackId": "620943762",
 	"tableOfContents": [
 		{"time": "01:04", "title": "Самое начало, йога по&nbsp;журналу &laquo;Наука и&nbsp;жизнь&raquo;"},
@@ -25,7 +25,7 @@
 	"guests": [
 		{
 			"name": "Артем Фролов",
-			"photo": "/images/guests/artem-frolov.png",
+			"photo": "/images/guests/artem-frolov.jpg",
 			"position": "Йогатерапевт",
 			"description": "<p>С&nbsp;2008 по&nbsp;2012 год&nbsp;&mdash; ведущий преподаватель курса &laquo;Йогатерапия&raquo; Института традиционных систем оздоровления (Москва). В&nbsp;2012-13 году&nbsp;&mdash; руководитель курса &laquo;Йогатерапия&raquo; Института Йогатерапии (Москва).</p><p>С&nbsp;2013 года и&nbsp;по&nbsp;настоящее время&nbsp;&mdash; руководитель и&nbsp;ведущий преподаватель <a href='https://yogatherapia.ru/' rel='nofollow'>курса &laquo;Йогатерапия&raquo;</a> Санкт-Петербургского Института восточных методов реабилитации (СПб ИВМР).</p><p>Преподаватель <a href='https://yogatherapia.ru/' rel='nofollow'>курса подготовки инструкторов йоги СПб ИВМР</a>, курса подготовки преподавателей &laquo;ЙОГА 108&raquo;.</p><p>Организатор ежегодной конференции <a href='http://yogatherapia-conf.ru/conf/' rel='nofollow'>&laquo;Практическая йогатерапия&raquo;</a></p><p>Председатель Санкт-Петербургского йогатерапевтического общества. Автор книг <a href='http://artem-frolov.spb.ru/news/1071' rel='nofollow'>&laquo;Травы для йогов&raquo;</a>, <a href='http://artem-frolov.spb.ru/news/1276' rel='nofollow'>&laquo;Йогатерапия&raquo;</a>, <a href='http://artem-frolov.spb.ru/news/1548' rel='nofollow'>&laquo;Пранаяма и&nbsp;шаткарма&raquo;</a>, ряда научных и&nbsp;научно-популярных публикаций по&nbsp;физиологии йоги, йогатерапии, фитотерапии и&nbsp;реабилитации.</p><p>Официальный сайт Артема: <a href='http://artem-frolov.spb.ru'>artem-frolov.spb.ru</a></p>"
 		}

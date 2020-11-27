@@ -6,7 +6,7 @@
 	"date": "2019-12-05",
 	"duration": "24:40",
 	"soundcloudTrackId": "723065266",
-	"image": "/images/episodes/30-about-tantra-good-books.png",
+	"image": "/images/episodes/30-about-tantra-good-books.jpg",
 	"tableOfContents": [
 		{"time": "02:11", "title": "Книга &laquo;Понять тантризм&raquo; Андре Паду"},
 		{"time": "03:10", "title": "Краткое содержание книги"},

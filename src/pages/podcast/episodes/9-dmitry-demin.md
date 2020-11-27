@@ -6,7 +6,7 @@
 	"date": "2019-02-12",
 	"duration": "1:34:23",
 	"soundcloudTrackId": "574104552",
-	"image": "/images/episodes/9-dmitry-demin.png",
+	"image": "/images/episodes/9-dmitry-demin.jpg",
 	"tableOfContents": [
 		{"time": "00:01:00", "title": "О&nbsp;высшем образовании"},
 		{"time": "00:03:13", "title": "Как начал заниматься йогой"},
@@ -56,7 +56,7 @@
 	"guests": [
 		{
 			"name": "Дмитрий Демин",
-			"photo": "/images/guests/dmitry-demin.png",
+			"photo": "/images/guests/dmitry-demin.jpg",
 			"position": "Преподаватель йоги",
 			"description": "<p>Один из&nbsp;ведущих специалистов по&nbsp;хатха-йоге на&nbsp;пост-советском пространстве. Преподаватель тичерз-курсов с&nbsp;2008&nbsp;года. Дипломированный специалист по&nbsp;лечебной физкультуре (РГУФК, 2011&nbsp;г.). Автор большого числа бесплатных материалов по&nbsp;всем аспектам йоги.</p> <p>Официальный сайт Дмитрия: <a href='http://ha-tha.ru/'>ha-tha.ru</a></p>"
 		}

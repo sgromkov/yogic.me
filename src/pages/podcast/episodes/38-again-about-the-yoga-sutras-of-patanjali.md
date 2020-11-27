@@ -6,7 +6,7 @@
 	"date": "2020-04-29",
 	"duration": "26:21",
 	"soundcloudTrackId": "809822887",
-	"image": "/images/episodes/38-again-about-the-yoga-sutras-of-patanjali.png",
+	"image": "/images/episodes/38-again-about-the-yoga-sutras-of-patanjali.jpg",
 	"tableOfContents": [
 		{"time": "03:02", "title": "Специфика изучения и&nbsp;переводов Йога Сутр"},
 		{"time": "04:31", "title": "Немного о&nbsp;самом Патанджали&nbsp;&mdash; разные точки зрения на&nbsp;его личность и&nbsp;историчность"},

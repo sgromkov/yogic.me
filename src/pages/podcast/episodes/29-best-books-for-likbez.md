@@ -6,7 +6,7 @@
 	"date": "2019-11-15",
 	"duration": "24:37",
 	"soundcloudTrackId": "713211028",
-	"image": "/images/episodes/29-best-books-for-likbez.png",
+	"image": "/images/episodes/29-best-books-for-likbez.jpg",
 	"tableOfContents": [
 		{"time": "01:40", "title": "Мирча Элиаде"},
 		{"time": "02:01", "title": "Немного о&nbsp;биографии М.&nbsp;Элиады"},

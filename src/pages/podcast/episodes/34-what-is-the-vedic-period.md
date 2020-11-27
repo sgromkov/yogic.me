@@ -6,7 +6,7 @@
 	"date": "2020-02-18",
 	"duration": "19:04",
 	"soundcloudTrackId": "762683152",
-	"image": "/images/episodes/34-what-is-the-vedic-period.png",
+	"image": "/images/episodes/34-what-is-the-vedic-period.jpg",
 	"tableOfContents": [
 		{"time": "00:12", "title": "Что&nbsp;же такое ведийские времена"},
 		{"time": "01:52", "title": "Что точнее&nbsp;&mdash; книга или устная передача?"},

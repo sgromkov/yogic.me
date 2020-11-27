@@ -6,7 +6,7 @@
 	"date": "2020-03-18",
 	"duration": "21:26",
 	"soundcloudTrackId": "777875845",
-	"image": "/images/episodes/36-epics-and-tales-of-india-part-2.png",
+	"image": "/images/episodes/36-epics-and-tales-of-india-part-2.jpg",
 	"tableOfContents": [
 		{"time": "00:25", "title": "Традиционное и&nbsp;научное понимание религиозно-философской истории"},
 		{"time": "05:48", "title": "Об&nbsp;атомном оружии в&nbsp;Махабхарате"},
