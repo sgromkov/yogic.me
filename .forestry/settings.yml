@@ -7,19 +7,17 @@ sections:
 - type: document
   path: src/pages/404.md
   label: '404'
-  match: "**/*"
 - type: document
   path: src/pages/about/index.md
   label: Обо мне
-  match: "**/*"
 - type: directory
   path: src/pages/podcast/episodes
   label: Эпизоды подкаста
   create: all
   match: "**/*"
   exclude: "**/*.json"
-upload_dir: uploads
-public_path: "/uploads"
+upload_dir: images
+public_path: "/images"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
