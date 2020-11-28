@@ -4,6 +4,14 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: src/pages/404.md
+  label: '404'
+  match: "**/*"
+- type: document
+  path: src/pages/about/index.md
+  label: Обо мне
+  match: "**/*"
 - type: directory
   path: src/pages/podcast/episodes
   label: Эпизоды подкаста
