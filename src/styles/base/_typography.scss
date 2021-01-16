@@ -35,12 +35,31 @@
 		color: _palette(fg);
 		text-decoration: none;
 
+		&[href^="https://"]::after,
+		&[href^="http://"]::after {
+			@include vendor('transition', (
+				'color #{_duration(transition)} ease-in-out'
+			));
+			transform: translate(3px, -6px);
+			display: inline-block;
+			content: "\f35d";
+			font-family: "Font Awesome 5 Free";
+			font-weight: 900;
+			font-size: 0.8em;
+			color: fade-out($color: _palette(fg), $amount: 0.8);
+		}
+
 		&:hover {
 			border-bottom-color: fade-out($color: _palette(link), $amount: 0.8);
 			color: _palette(link) !important;
 
 			strong {
 				color: inherit;
+			}
+
+			&[href^="https://"]::after,
+			&[href^="http://"]::after {
+				color: fade-out($color: _palette(link), $amount: 0.8);
 			}
 		}
 	}
