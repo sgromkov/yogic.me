@@ -5,6 +5,10 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
+  path: src/pages/index.njk
+  label: Главная
+  match: "**/*"
+- type: document
   path: src/pages/404.md
   label: '404'
 - type: document
