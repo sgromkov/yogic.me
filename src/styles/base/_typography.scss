@@ -35,8 +35,8 @@
 		color: _palette(fg);
 		text-decoration: none;
 
-		&[href^="https://"]::after,
-		&[href^="http://"]::after {
+		&:not(.icon)[href^="https://"]::after,
+		&:not(.icon)[href^="http://"]::after {
 			@include vendor('transition', (
 				'color #{_duration(transition)} ease-in-out'
 			));
@@ -57,8 +57,8 @@
 				color: inherit;
 			}
 
-			&[href^="https://"]::after,
-			&[href^="http://"]::after {
+			&:not(.icon)[href^="https://"]::after,
+			&:not(.icon)[href^="http://"]::after {
 				color: fade-out($color: _palette(link), $amount: 0.8);
 			}
 		}
