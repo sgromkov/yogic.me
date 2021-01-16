@@ -21,7 +21,7 @@ eleventyNavigation:
     <ul class="icons">
         {% for link in metadata.author.socials %}
             <li>
-                <a href="{{ link.url }}" class="icon brands fa-{{ link.icon }}">
+                <a href="{{ link.url }}" class="icon brands fa-{{ link.icon }}" rel="nofollow">
                     <span class="label">{{ link.title }}</span>
                 </a>
             </li>
