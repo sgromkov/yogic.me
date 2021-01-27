@@ -1,0 +1,45 @@
+{% macro episodeNeighbor(props = {}) %}
+    {% set episode = props.episode | default({}) %}
+
+    <article class="episode-neighbor-preview">
+        <div class="episode-neighbor-preview__picture">
+            <div class="picture picture_shape_square">
+                <div class="picture__container">
+                    <img
+                        class="picture__image"
+                        src="{{ episode.data.image | default('/images/podcast/logo-square.jpg') }}"
+                        alt="Обложка выпуска номер {{ episode.data.number }} - {{ episode.data.title | safe }}"
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="episode-neighbor-preview__main">
+            <div class="episode-neighbor-preview__credits credits">
+                <ul class="credits__list reset-list">
+                    <li class="credits__item">
+                        <span class="credits__text">Выпуск {{ episode.data.number }}</span>
+                    </li>
+                    <li class="credits__item">
+                        <time
+                            datetime="{{ episode.data.date }}"
+                            class="credits__text"
+                            title="Дата публикации"
+                        >
+                            {{ episode.data.date | readableDate }}
+                        </time>
+                    </li>
+                </ul>
+            </div>
+            <h3 class="episode-neighbor-preview__title">
+                <a href="{{ episode.url | url }}" class="episode-neighbor-preview__link">
+                    {{ episode.data.title | safe }}
+                </a>
+            </h3>
+            {% if episode.data.description|length %}
+                <div class="episode-neighbor-preview__description">
+                    {{ episode.data.description |safe }}
+                </div>
+            {% endif %}
+        </div>
+    </article>
+{% endmacro %}

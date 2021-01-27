@@ -9,7 +9,7 @@ const markdownItAnchor = require("markdown-it-anchor");
 const getDateInRu = require("./src/scripts/utilities/getDateInRU");
 const util = require('util');
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
@@ -33,12 +33,12 @@ module.exports = function(eleventyConfig) {
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
   });
 
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {
-    if( n < 0 ) {
+    if (n < 0) {
       return array.slice(n);
     }
 
@@ -49,19 +49,33 @@ module.exports = function(eleventyConfig) {
     return `<pre>${util.inspect(obj)}</pre>`;
   });
 
-  eleventyConfig.addCollection("podcastInterview", function(collectionApi) {
+  eleventyConfig.addCollection("episodes", function (collection) {
+    const coll = collection.getFilteredByTag("episodes");
+
+    for (let i = 0; i < coll.length; i++) {
+      const prevEpisode = coll[i - 1];
+      const nextEpisode = coll[i + 1];
+
+      coll[i].data["prevEpisode"] = prevEpisode;
+      coll[i].data["nextEpisode"] = nextEpisode;
+    }
+
+    return coll;
+  });
+
+  eleventyConfig.addCollection("podcastInterview", function (collectionApi) {
     return collectionApi.getFilteredByTags("episodes", "interview");
   });
 
-  eleventyConfig.addCollection("podcastTeacher", function(collectionApi) {
+  eleventyConfig.addCollection("podcastTeacher", function (collectionApi) {
     return collectionApi.getFilteredByTags("episodes", "teacher");
   });
 
-  eleventyConfig.addCollection("podcastPhilosophy", function(collectionApi) {
+  eleventyConfig.addCollection("podcastPhilosophy", function (collectionApi) {
     return collectionApi.getFilteredByTags("episodes", "philosophy");
   });
 
-  eleventyConfig.addCollection("podcastVegetarian", function(collectionApi) {
+  eleventyConfig.addCollection("podcastVegetarian", function (collectionApi) {
     return collectionApi.getFilteredByTags("episodes", "vegetarian");
   });
 
@@ -87,7 +101,7 @@ module.exports = function(eleventyConfig) {
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
-      ready: function(err, browserSync) {
+      ready: function (err, browserSync) {
         const content_404 = fs.readFileSync('_site/404.html');
 
         browserSync.addMiddleware("*", (req, res) => {

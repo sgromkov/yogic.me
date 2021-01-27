@@ -1,0 +1,33 @@
+{% macro episodesNeighbors(props = {}) %}
+    {% set prevEpisode = props.prevEpisode | default(false) %}
+    {% set nextEpisode = props.nextEpisode | default(false) %}
+
+    {% from "macros/episode-neighbor.njk" import episodeNeighbor %}
+
+    {% if (prevEpisode and prevEpisode.url) or (nextEpisode and nextEpisode.url) %}
+        <section class="episodes-neighbors">
+            <ul class="episodes-neighbors__list reset-list row">
+                {% if prevEpisode and prevEpisode.url %}
+                    <li class="episodes-neighbors__item col-6 col-12-small col-12-medium">
+                        <div class="episodes-neighbors__box box">
+                            <h3>Предыдущий выпуск</h3>
+                            {{ episodeNeighbor({
+                                episode: prevEpisode
+                            }) }}
+                        </div>
+                    </li>
+                {% endif %}
+                {% if nextEpisode and nextEpisode.url %}
+                    <li class="episodes-neighbors__item col-6 col-12-small col-12-medium">
+                        <div class="episodes-neighbors__box box">
+                            <h3>Следующий выпуск</h3>
+                            {{ episodeNeighbor({
+                                episode: nextEpisode
+                            }) }}
+                        </div>
+                    </li>
+                {% endif %}
+            </ul>
+        </section>
+    {% endif %}
+{% endmacro %}

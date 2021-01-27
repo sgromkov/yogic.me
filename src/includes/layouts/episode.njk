@@ -4,6 +4,15 @@ renderData:
   title: "{{ title }} | Выпуск {{ number }} | Подкаст &laquo;Ёжик в&nbsp;нирване&raquo;"
 ---
 
+{% from "macros/episodes-neighbors.njk" import episodesNeighbors %}
+
+{% set currentEpisode = {} %}
+{% for episode in collections.episodes %}
+  {% if episode.data.number == number %}
+    {% set currentEpisode = episode %}
+  {% endif %}
+{% endfor %}
+
 <section>
     <header class="content-header">
         <h1>{{ title | safe }}</h1>
@@ -22,3 +31,8 @@ renderData:
 
     {{ content | safe }}
 </section>
+
+{{ episodesNeighbors({
+  'prevEpisode': currentEpisode.data.prevEpisode,
+  'nextEpisode': currentEpisode.data.nextEpisode
+}) }}
