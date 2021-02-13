@@ -8,6 +8,7 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const getDateInRu = require("./src/scripts/utilities/getDateInRU");
 const util = require('util');
+const htmlmin = require("html-minifier");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -113,6 +114,20 @@ module.exports = function (eleventyConfig) {
     },
     ui: false,
     ghostMode: false
+  });
+
+  eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
+    // Eleventy 1.0+: use this.inputPath and this.outputPath instead
+    if (outputPath.endsWith(".html")) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      });
+      return minified;
+    }
+
+    return content;
   });
 
   return {
