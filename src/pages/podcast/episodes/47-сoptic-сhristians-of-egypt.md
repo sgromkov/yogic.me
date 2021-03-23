@@ -5,6 +5,7 @@ description: Сегодня мы отойдем от темы йоги, инду
 date: "2021-02-15"
 duration: "24:28"
 soundcloudTrackId: 985902058
+youtubeId: 5IrNo4pmoWM
 image: /images/episodes/47-сoptic-сhristians-of-egypt.jpg
 tableOfContents:
   - time: "01:23"

@@ -5,6 +5,7 @@ renderData:
 ---
 
 {% from "macros/episodes-neighbors.njk" import episodesNeighbors %}
+{% from "macros/youtube-player.njk" import youtubePlayer %}
 
 {% set currentEpisode = {} %}
 {% for episode in collections.episodes %}
@@ -22,6 +23,11 @@ renderData:
     </header>
 
     {% include "components/soundcloud-iframe.njk" %}
+
+    {% if youtubeId %}
+      <h2>Видео выпуск</h2>
+      {{ youtubePlayer({ videoId: youtubeId }) }}
+    {% endif %}
 
     {% include "components/podcast-guests.njk" %}
 

@@ -5,6 +5,7 @@ description: Сегодня о том, как русский купец и пу�
 date: "2021-01-18"
 duration: "28:02"
 soundcloudTrackId: 967733857
+youtubeId: aIKQWCAFaF4
 image: /images/episodes/45-how-afanasy-nikitin-went-to-india.jpg
 tableOfContents:
   - time: "02:29"

@@ -5,6 +5,7 @@ description: Откуда возникают религиозные предст
 date: "2021-03-04"
 duration: "33:57"
 soundcloudTrackId: 998352751
+youtubeId: RoJejEJ9pw0
 image: /images/episodes/49-the-pure-and-the-impure-in-religions-and-rituals.jpg
 tableOfContents:
   - time: "00:00"

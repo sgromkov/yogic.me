@@ -5,5 +5,6 @@ description: Сегодня мы поговорим о том, есть ли й�
 date: "2021-02-05"
 duration: "27:41"
 soundcloudTrackId: 979857595
+youtubeId: 3GB_yGbhYxE
 image: /images/episodes/46-is-there-yoga-in-christianity.jpg
 ---

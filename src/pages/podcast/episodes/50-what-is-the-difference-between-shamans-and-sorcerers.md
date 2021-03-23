@@ -5,6 +5,7 @@ description: Сегодня поговорим о том, чем шаман от
 date: "2021-03-20"
 duration: "12:05"
 soundcloudTrackId: 1011501496
+youtubeId: EwhMcAn6awI
 image: /images/episodes/50-what-is-the-difference-between-shamans-and-sorcerers.jpg
 tableOfContents:
   - time: "00:00"
