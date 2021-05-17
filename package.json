@@ -1,7 +1,7 @@
 {
-  "name": "eleventy-base-blog",
+  "name": "yogic.me",
   "version": "5.0.2",
-  "description": "A starter repository for a blog web site using the Eleventy static site generator.",
+  "description": "Personal website of Maria Vorobyova",
   "scripts": {
     "build": "eleventy",
     "watch": "eleventy --watch",
@@ -12,18 +12,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/11ty/eleventy-base-blog.git"
+    "url": "https://github.com/sgromkov/yogic.me.git"
   },
   "author": {
-    "name": "Zach Leatherman",
-    "email": "zachleatherman@gmail.com",
-    "url": "https://zachleat.com/"
+    "name": "Sergey Gromkov",
+    "email": "sgromkov@gmail.com",
+    "url": "https://gromkov.me/"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/11ty/eleventy-base-blog/issues"
+    "url": "https://github.com/sgromkov/yogic.me/issues"
   },
-  "homepage": "https://github.com/11ty/eleventy-base-blog#readme",
+  "homepage": "https://yogic.me",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "@11ty/eleventy-navigation": "^0.1.6",
