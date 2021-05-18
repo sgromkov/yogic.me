@@ -45,7 +45,7 @@ eleventyNavigation:
 
 Для того, чтобы сформировать адекватное представление о разнообразных религиозно-философских учениях, их истории, развитии, составляющих и современном состоянии я делаю <a href="/podcast/">подкаст «Ёжик в нирване»</a>. Это мой небольшой вклад в славное дело «научпопа».
 
-Аудио вариант можно послушать в <a href="https://soundcloud.com/hedgehoginnirvana" rel="nofollow">SoundCloud</a>, <a href="https://vk.com/podcasts-173725689" rel="nofollow">Вконтакте</a>, <a href="https://podcasts.apple.com/ru/podcast/%D0%B5%D0%B6%D0%B8%D0%BA-%D0%B2-%D0%BD%D0%B8%D1%80%D0%B2%D0%B0%D0%BD%D0%B5/id1443097375" rel="nofollow">Apple Podcasts</a>, <a href="https://music.yandex.ru/album/6965485" rel="nofollow">Яндекс.Музыке</a>, <a href="https://podcasts.google.com/feed/aHR0cDovL2ZlZWRzLnNvdW5kY2xvdWQuY29tL3VzZXJzL3NvdW5kY2xvdWQ6dXNlcnM6NTM2ODI3OTUwL3NvdW5kcy5yc3M?sa=X&ved=2ahUKEwjkw8rksrzuAhUD44UKHdFxBRoQ9sEGegQIARAC" rel="nofollow">Google Покастах</a>.
+Аудио вариант можно послушать в <a href="https://soundcloud.com/hedgehoginnirvana" rel="nofollow">SoundCloud</a>, <a href="https://podcasts.apple.com/ru/podcast/%D0%B5%D0%B6%D0%B8%D0%BA-%D0%B2-%D0%BD%D0%B8%D1%80%D0%B2%D0%B0%D0%BD%D0%B5/id1443097375" rel="nofollow">Apple Podcasts</a>, <a href="https://music.yandex.ru/album/6965485" rel="nofollow">Яндекс.Музыке</a>, <a href="https://podcasts.google.com/feed/aHR0cDovL2ZlZWRzLnNvdW5kY2xvdWQuY29tL3VzZXJzL3NvdW5kY2xvdWQ6dXNlcnM6NTM2ODI3OTUwL3NvdW5kcy5yc3M?sa=X&ved=2ahUKEwjkw8rksrzuAhUD44UKHdFxBRoQ9sEGegQIARAC" rel="nofollow">Google Покастах</a>.
 
 На <a href="https://www.youtube.com/channel/UCDO1zjq34CrgHe2wCNwwMmg" rel="nofollow">моём youtube канале</a> недавно стала выходить видео версия.
 
