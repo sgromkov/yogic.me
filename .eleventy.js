@@ -80,6 +80,10 @@ module.exports = function (eleventyConfig) {
     return collectionApi.getFilteredByTags("episodes", "vegetarian");
   });
 
+  eleventyConfig.addCollection("podcastReligions", function (collectionApi) {
+    return collectionApi.getFilteredByTags("episodes", "religions");
+  });
+
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/build");
   eleventyConfig.addPassthroughCopy("src/dist");

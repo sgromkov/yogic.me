@@ -7,4 +7,5 @@ duration: "27:41"
 soundcloudTrackId: 979857595
 youtubeId: 3GB_yGbhYxE
 image: /images/episodes/46-is-there-yoga-in-christianity.jpg
+tags: religions
 ---

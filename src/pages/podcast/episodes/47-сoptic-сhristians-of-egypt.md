@@ -28,4 +28,5 @@ tableOfContents:
     title: Про монашество и монастыри
   - time: "19:55"
     title: Копты сегодня
+tags: religions
 ---

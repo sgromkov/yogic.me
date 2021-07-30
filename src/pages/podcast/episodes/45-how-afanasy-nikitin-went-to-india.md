@@ -30,4 +30,5 @@ tableOfContents:
     title: На каком языке написаны записки
   - time: "24:23"
     title: Как возвращался назад
+tags: religions
 ---

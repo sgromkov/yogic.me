@@ -24,4 +24,5 @@ tableOfContents:
     title: Функции шаманов
   - time: "09:24"
     title: О колдунах
+tags: religions
 ---

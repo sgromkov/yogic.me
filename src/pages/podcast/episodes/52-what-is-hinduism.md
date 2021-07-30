@@ -32,4 +32,5 @@ tableOfContents:
     title: Культ смерти в индуизме
   - time: "26:34"
     title: Веротерпимость в индуизме
+tags: religions
 ---
