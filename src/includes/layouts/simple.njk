@@ -3,7 +3,7 @@ layout: layouts/home.njk
 ---
 <section>
     <header class="content-header">
-        <h1>{{ title }}</h1>
+        <h1>{{ title | safe }}</h1>
     </header>
     {{ content | safe }}
 </section>
