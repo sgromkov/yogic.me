@@ -1,0 +1,4 @@
+- name: Build
+  uses: TartanLlama/actions-eleventy@v1.3
+  with:
+    install_dependencies: true
