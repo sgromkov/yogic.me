@@ -3,7 +3,7 @@
   "version": "5.0.2",
   "description": "Personal website of Maria Vorobyova",
   "scripts": {
-    "build": "eleventy --pathprefix 'yogic.me'",
+    "build": "eleventy",
     "watch": "eleventy --watch",
     "serve": "eleventy --serve",
     "start": "eleventy --serve",
